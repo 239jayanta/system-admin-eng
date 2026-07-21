@@ -16,4 +16,4 @@ if disk spach resize 50GB fot that will be
 # sudo qemu-img resize /mnt/mydisk/backup/vm/openclow_server.qcow2 +50G
 
 when vm disk resize is done then vm will be start
-virsh start openclow_server
+# virsh start openclow_server
