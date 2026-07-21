@@ -17,3 +17,17 @@ if disk spach resize 50GB fot that will be
 
 when vm disk resize is done then vm will be start
 # virsh start openclow_server
+check the disk > lsblk and > command df -h
+when check disk 'lsblk' showing terminal on system disk-size add in vda not root directory '/'. For thsi resone will be LVM
+check the disk which mathode format by disk gpt or pmbr 
+# sudo fdisk -l /dev/vda
+Now will be extend partition vda3 
+
+# sduo growpart /dev/vda 3
+varify the partion adding 50Gb showing.check /# sudo pvdisplay /#sudo lvdisplay thsi command for all details lvm 
+and then extend the logical volume 
+# sudo lvextend -l +100%FREE /dev/ubuntu-vg/ubuntu-lv
+resizefile system and entry the fstab 
+# sudo resize2fs /dev/ubuntu-vg/ubuntu-lv 
+finally check the vm 50GB add is it connected the '/' partition
+# lsblk
