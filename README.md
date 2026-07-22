@@ -1,4 +1,4 @@
-# system-admin-eng
+# system-admine-eng
 ## KVM on vm Disk resizge and LVM mathode
 # Cauction: If Configuration disk expend then must kvm-vm disk will be LVM otherwise can not disk resize.
 
