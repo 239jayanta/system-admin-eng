@@ -1,6 +1,6 @@
 # system-admin-eng
 ## KVM on vm Disk resizge and LVM mathode
-# Cauction: If Configuration disk expend then must kvm-vm disk will be LVM otherwise cant not disk resize.
+# Cauction: If Configuration disk expend then must kvm-vm disk will be LVM otherwise can not disk resize.
 
 At fast showing have on system disk-spache. 
 # lsblk 
